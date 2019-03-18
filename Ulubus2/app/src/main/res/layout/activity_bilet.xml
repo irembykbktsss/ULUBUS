@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bilet">
+
+    <TextView
+        android:id="@+id/txtViewBiletFiyati"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:text="Bilet Fiyatı : "
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSigorta" />
+
+    <TextView
+        android:id="@+id/txtViewSigorta"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:text="Sigorta : "
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewTarih" />
+
+    <TextView
+        android:id="@+id/txtViewTarih"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="21dp"
+        android:text="Tarih :"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKoltukNo" />
+
+    <TextView
+        android:id="@+id/txtViewKoltukNo"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:text="Koltuk No :"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewNerdenNereye" />
+
+    <TextView
+        android:id="@+id/txtViewBiletBilgileri"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="123dp"
+        android:text="Bilet Bilgileri"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewAdSoyad"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="17dp"
+        android:text="Ad Soyad : "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewBiletBilgileri" />
+
+    <TextView
+        android:id="@+id/txtViewNerdenNereye"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:text="Nereden-Nereye"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewAdSoyad" />
+
+    <TextView
+        android:id="@+id/txtViewToplamTutar"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="27dp"
+        android:text="Toplam Tutar"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewBiletFiyati" />
+
+    <Button
+        android:id="@+id/odemeBtn"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="odeme"
+        android:text="Ödeme"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewToplamTutar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/isimText"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:textAlignment="inherit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewAdSoyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewAdSoyad"
+        app:layout_constraintTop_toTopOf="@+id/txtViewAdSoyad" />
+
+    <TextView
+        android:id="@+id/seferText"
+        android:layout_width="187dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewNerdenNereye"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewNerdenNereye"
+        app:layout_constraintTop_toTopOf="@+id/txtViewNerdenNereye" />
+
+    <TextView
+        android:id="@+id/koltukText"
+        android:layout_width="180dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewKoltukNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewKoltukNo"
+        app:layout_constraintTop_toTopOf="@+id/txtViewKoltukNo" />
+
+    <TextView
+        android:id="@+id/tarihText"
+        android:layout_width="185dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewTarih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewTarih"
+        app:layout_constraintTop_toTopOf="@+id/txtViewTarih" />
+
+    <TextView
+        android:id="@+id/sigortaText"
+        android:layout_width="202dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewSigorta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewSigorta"
+        app:layout_constraintTop_toTopOf="@+id/txtViewSigorta" />
+
+    <TextView
+        android:id="@+id/fiyatText"
+        android:layout_width="210dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewBiletFiyati"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewBiletFiyati"
+        app:layout_constraintTop_toTopOf="@+id/txtViewBiletFiyati" />
+
+    <TextView
+        android:id="@+id/toplamText"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewToplamTutar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewToplamTutar"
+        app:layout_constraintTop_toTopOf="@+id/txtViewToplamTutar" />
+
+</android.support.constraint.ConstraintLayout>

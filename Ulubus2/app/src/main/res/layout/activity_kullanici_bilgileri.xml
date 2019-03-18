@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KullaniciBilgileri"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/kullaniciBilgileri"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="11dp"
+        android:text="Kullanıcı Bilgileri"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewİsim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kullaniciDevamBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:onClick="devam"
+        android:text="Devam"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSigorta" />
+
+    <TextView
+        android:id="@+id/txtViewİsim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="13dp"
+        android:text="İsim"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtSoyisim"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewSoyisim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciBilgileri" />
+
+    <TextView
+        android:id="@+id/txtViewSoyisim"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="11dp"
+        android:text="Soyisim"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtSoyisim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewİsim"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciBilgileri" />
+
+    <EditText
+        android:id="@+id/editTxtİsim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtSoyisim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewİsim" />
+
+    <EditText
+        android:id="@+id/editTxtSoyisim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewTc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTxtİsim"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewİsim" />
+
+    <TextView
+        android:id="@+id/txtViewTc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tc No"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtTelefon"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewTelefon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtSoyisim" />
+
+    <TextView
+        android:id="@+id/txtViewTelefon"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="11dp"
+        android:text="Telefon"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtTelefon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewTc"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtSoyisim" />
+
+    <EditText
+        android:id="@+id/editTxtTc"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="11"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewEmail"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtTelefon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtViewTc" />
+
+    <EditText
+        android:id="@+id/editTxtTelefon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="11"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTxtTc"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewTc" />
+
+    <TextView
+        android:id="@+id/txtViewEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:text="E-mail"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtEmail"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewTc"
+        app:layout_constraintStart_toStartOf="@+id/editTxtTc"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTelefon" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSigorta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="36dp"
+        android:text="Sigorta (+5tl )"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciDevamBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtEmail" />
+
+    <EditText
+        android:id="@+id/editTxtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxSigorta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewEmail" />
+
+</android.support.constraint.ConstraintLayout>

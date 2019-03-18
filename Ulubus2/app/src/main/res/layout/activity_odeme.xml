@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Odeme">
+
+    <TextView
+        android:id="@+id/txtViewSonKullanmaTarihi"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:text="Son Kullanma Tarihi"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtKartNo" />
+
+    <TextView
+        android:id="@+id/txtViewKartNo"
+        android:layout_width="152dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:text="Kart No"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtAdSoyad" />
+
+    <TextView
+        android:id="@+id/txtViewKrediKartiOdeme"
+        android:layout_width="223dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=" Ödeme Tutarı"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewKDVDahil"
+        android:layout_width="224dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="KDV Dahil Toplam Tutar"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKrediKartiOdeme" />
+
+    <TextView
+        android:id="@+id/txtViewAdSoyad"
+        android:layout_width="149dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="202dp"
+        android:text="Ad Soyad"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKDVDahil" />
+
+    <EditText
+        android:id="@+id/editTxtAdSoyad"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="153dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewAdSoyad" />
+
+    <EditText
+        android:id="@+id/editTxtKartNo"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="16"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtAdSoyad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKartNo" />
+
+    <TextView
+        android:id="@+id/txtViewGuvenlikKodu"
+        android:layout_width="159dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Guvenlik Kodu"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtSonKullanmaTarihi" />
+
+    <TextView
+        android:id="@+id/txtViewAcıklama"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="24dp"
+        android:text="Kartınızın Arkasındaki Son 3 Hane"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtKartNo" />
+
+    <EditText
+        android:id="@+id/editTxtGuvenlikKodu"
+        android:layout_width="149dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewAcıklama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewGuvenlikKodu" />
+
+    <Button
+        android:id="@+id/odemeTamamlaBtn"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimary"
+        android:onClick="odemeTamamlandı"
+        android:text="Ödemeyi Tamamla"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtGuvenlikKodu"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtViewTl"
+        android:layout_width="103dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="46dp"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtAdSoyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTxtSonKullanmaTarihi"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="153dp"
+        android:ems="10"
+        android:inputType="date"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSonKullanmaTarihi" />
+
+</android.support.constraint.ConstraintLayout>

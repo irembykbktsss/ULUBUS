@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/layout2" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        -
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="385dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorPrimary"
+            android:onClick="koltukDevam"
+            android:text="DEVAM"
+            android:textColor="@android:color/background_light"
+            tools:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/koltukText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="48dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="415dp">
+
+
+            -
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/koltuk34"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk18"
+                    android:layout_alignTop="@+id/koltuk33"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="34" />
+
+                <Button
+                    android:id="@+id/koltuk7"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="117dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="7"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk33"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="489dp"
+                    android:layout_marginEnd="-61dp"
+                    android:layout_toStartOf="@+id/koltuk11"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="33" />
+
+                <Button
+                    android:id="@+id/koltuk18"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk9"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="18"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk25"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk9"
+                    android:layout_alignTop="@+id/koltuk24"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="25" />
+
+                <Button
+                    android:id="@+id/koltuk16"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk7"
+                    android:layout_alignTop="@+id/koltuk18"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="16"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk9"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk3"
+                    android:layout_alignTop="@+id/koltuk7"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="9"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk12"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk9"
+                    android:layout_alignTop="@+id/koltuk11"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="12"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk37"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk18"
+                    android:layout_alignTop="@+id/koltuk27"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="136dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="37"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk32"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/koltuk27"
+                    android:layout_alignStart="@+id/koltuk29"
+                    android:layout_alignEnd="@+id/koltuk29"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="32" />
+
+                <Button
+                    android:id="@+id/koltuk13"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk1"
+                    android:layout_alignTop="@+id/koltuk15"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="13"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk27"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk26"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="27" />
+
+                <Button
+                    android:id="@+id/koltuk2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginEnd="96dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="2"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk36"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/koltuk30"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="-121dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="36" />
+
+                <Button
+                    android:id="@+id/koltuk22"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk9"
+                    android:layout_alignTop="@+id/koltuk21"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="22" />
+
+                <Button
+                    android:id="@+id/koltuk24"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk23"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="24" />
+
+                <Button
+                    android:id="@+id/koltuk40"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/koltuk30"
+                    android:layout_alignStart="@+id/koltuk18"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="-163dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="40" />
+
+                <Button
+                    android:id="@+id/koltuk39"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk27"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="179dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="39" />
+
+                <Button
+                    android:id="@+id/koltuk21"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk20"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="21" />
+
+                <Button
+                    android:id="@+id/koltuk28"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk18"
+                    android:layout_alignTop="@+id/koltuk27"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="28" />
+
+                <Button
+                    android:id="@+id/koltuk30"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/koltuk33"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="-474dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="30" />
+
+                <Button
+                    android:id="@+id/koltuk23"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="361dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="23" />
+
+                <Button
+                    android:id="@+id/koltuk14"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk13"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="14"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk29"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/koltuk33"
+                    android:layout_alignStart="@+id/koltuk26"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="-474dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:onClick="koltukDevam"
+                    android:text="29" />
+
+                <Button
+                    android:id="@+id/koltuk10"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="157dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="10"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk35"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/koltuk33"
+                    android:layout_alignStart="@+id/koltuk7"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="35" />
+
+                <Button
+                    android:id="@+id/koltuk15"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk9"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="197dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="15"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk31"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk34"
+                    android:layout_alignTop="@+id/koltuk30"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="31" />
+
+                <Button
+                    android:id="@+id/koltuk26"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk7"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="-1dp"
+                    android:layout_marginTop="398dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="26" />
+
+                <Button
+                    android:id="@+id/koltuk17"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk18"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="17"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk8"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk2"
+                    android:layout_alignTop="@+id/koltuk7"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="8"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk38"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk35"
+                    android:layout_alignEnd="@+id/koltuk35"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="577dp"
+                    android:layout_marginEnd="-2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="38" />
+
+                <Button
+                    android:id="@+id/koltuk1"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk3"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk1"
+                    android:layout_marginStart="-260dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk11"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk2"
+                    android:layout_alignTop="@+id/koltuk10"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="11"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk5"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk11"
+                    android:layout_alignTop="@+id/koltuk4"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="5"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/koltuk6"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/koltuk3"
+                    android:layout_alignTop="@+id/koltuk4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_button_background_png"
+                    android:text="6"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_height="30dp"
+                    android:layout_width="60dp"
+                    android:id="@+id/koltuk4"
+                    android:text="4"
+                    android:background="@drawable/custom_button_background_png"
+                    android:layout_marginTop="75dp"
+                    android:layout_alignStart="@+id/koltuk13"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true" />
+
+                <Button
+                    android:layout_height="30dp"
+                    android:layout_width="60dp"
+                    android:id="@+id/koltuk19"
+                    android:text="19"
+                    android:background="@drawable/custom_button_background_png"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_alignStart="@+id/koltuk18"
+                    android:layout_below="@+id/koltuk18" />
+
+                <Button
+                    android:layout_height="30dp"
+                    android:layout_width="60dp"
+                    android:id="@+id/koltuk20"
+                    android:text="20"
+                    android:background="@drawable/custom_button_background_png"
+                    android:layout_marginTop="322dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_alignStart="@+id/koltuk7"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>
